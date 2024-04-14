@@ -5,6 +5,7 @@ import {
   FlatList,
   Image,
   ImageBackground,
+  Text,
   TouchableOpacity,
 } from "react-native";
 
