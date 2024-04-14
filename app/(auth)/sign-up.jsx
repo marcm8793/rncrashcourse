@@ -6,8 +6,10 @@ import { createUser } from "../../lib/appwrite";
 import { images } from "../../constants";
 import FormField from "../../components/FormField";
 import CustomButton from "../../components/CustomButton";
+import { useGlobalContext } from "../../context/GlobalProvider";
 
 const SignUp = () => {
+  const { setUser, setIsLogged } = useGlobalContext();
   const [isSubmitting, setSubmitting] = useState(false);
   const [form, setForm] = useState({
     username: "",
